@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "cfa8db0d-990a-4865-8d3a-5b9c4ef7351a",
+		"name": "Microservices Using Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user_service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9001/user/1311",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"user",
+						"1311"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact_service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9002/contact/user/1311",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"contact",
+						"user",
+						"1311"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apigateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8999/user/1311",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8999",
+					"path": [
+						"user",
+						"1311"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
